@@ -1,0 +1,37 @@
+*{
+    font-family: sans-serif;
+    background-color: rgb(172, 240, 217);
+}
+
+h1 {
+    text-align: center;
+}
+
+.box-numero{
+    text-align: center; /**Elemento como linea se centra**/
+    margin-bottom: 25px; /**separando los botones**/
+
+}
+
+.box-comandos{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.box-comandos input{
+    font-size: 25px;
+    font-weight: bold;
+    width: 30px; 
+    height: 30px; /**haciendo cuadrado los botones**/
+}
+
+.box-comandos .btn-reset{
+    font-size: 16px;
+    width: initial;
+    height: initial;
+}
+.resultado{
+    text-align: center;
+    color: rgb(40, 40, 40);
+    font-size: 50px;
+}

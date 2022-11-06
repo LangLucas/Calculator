@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Calculator</h1>
+
+    <div class="calculadora">
+            <div class="box-numero">
+                <!-- label no ocupa todo el ancho de la linea por lo que el cuadro queda a su lado-->
+                <label for="input-n1"> 
+                    Enter a number
+                </label>
+                <input type="text" id="input-n1">
+            </div>
+            <div class="box-numero">
+                <!-- Se divide en 2div para que saltee linea, y no se queden uno al lado del otro-->
+                <label for="input-n2"> 
+                    Enter a number
+                </label>
+                <input type="text" id="input-n2">
+            </div>
+
+            <div class="box-comandos">
+                <input type="button" value="+" onclick="sumar()">
+                <input type="button" value="-" onclick="restar()">
+                <input type="button" value="*" onclick="multiplicacion()">
+                <input type="button" value="/" onclick="division()">
+            </div>
+
+            <div class="box-comandos">
+                <input class= 'btn-reset' type="button" value="reset" onclick="reset()">
+            </div>
+
+            <p class="resultado" id="resultado"> Here is the result </p>
+    </div>
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
